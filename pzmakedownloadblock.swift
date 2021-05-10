@@ -1,4 +1,4 @@
-// Port of an old 
+// Port of shell script: https://gist.github.com/Wevah/8c4315833cd0aa66c6a8921c0d1912d1
 
 import Foundation
 import CryptoKit
