@@ -1,4 +1,4 @@
-#!/usr/bin/env swift
+// Port of an old 
 
 import Foundation
 import CryptoKit
@@ -30,7 +30,6 @@ struct Download {
 		dateFormatter.dateStyle = .long
 		dateFormatter.timeStyle = .none
 		let dateString = dateFormatter.string(for: values.contentModificationDate!)!
-		
 		
 		let byteFormatter = ByteCountFormatter()
 		byteFormatter.allowedUnits = [.useBytes]
