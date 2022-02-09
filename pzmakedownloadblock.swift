@@ -34,11 +34,13 @@ struct Download {
 		let byteFormatter = ByteCountFormatter()
 		byteFormatter.allowedUnits = [.useBytes]
 		let fileSize = byteFormatter.string(for: values.fileSize!)!
+		
+		let kind = url.pathExtension
 	
 		return """
 			<p class="download">
 				<span><a href="downloads/\(filename)">\(downloadName)</a></span>
-				<span class="info">(10.9+; Compressed .dmg) [\(fileSize)]</span>
+				<span class="info">(10.9+; \(kind)) [\(fileSize)]</span>
 				<time datetime="\(isoString)">\(dateString)</time>
 				<span class="hash">SHA-256: \(fileHash())</span>
 			</p>
